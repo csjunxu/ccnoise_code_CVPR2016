@@ -11,8 +11,8 @@ for i = 1:im_num
     S = regexp(TT_im_dir(i).name, '\.', 'split');
     IMname = S{1};
     fprintf('%s : \n',IMname);
-    Options.kernelratio     = 3;
-    Options.windowratio  = 21;
+    Options.kernelratio     = 4;
+    Options.windowratio  = 4;
     Options.verbose         = true;
     Options.filterstrength = 0.1;
     Options.nThreads       = 8;
